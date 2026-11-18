@@ -1,0 +1,25 @@
+# Main-thread time NaturalRegen may use each tick, in milliseconds (a tick is 50 ms).
+# Lower = less lag but slower. Change live with /nregen speed <ms>.
+budget-ms: 20
+
+# How many chunks are loaded/generated ahead of time. Higher = faster, more memory.
+max-chunks-in-flight: 16
+
+# Copy the natural biomes back (fixes grass/water colours if they were changed).
+copy-biomes: true
+
+# Remove every non-player entity in the area (armor stands, item frames, minecarts,
+# mobs, dropped items...) and copy in the mobs/entities the seed naturally generated.
+replace-entities: true
+
+# Delete the temporary generation world when a job finishes.
+delete-temp-world: true
+
+# Save the old blocks so /nregen undo can put them back (blocks only).
+write-undo: true
+
+# Seconds you have to type /nregen confirm.
+confirm-timeout-seconds: 30
+
+# Leave at 0 to use the world's own seed (recommended).
+seed-override: 0

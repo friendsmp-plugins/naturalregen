@@ -1,0 +1,17 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+        mavenCentral()
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        maven { url = 'https://repo.papermc.io/repository/maven-public/' }
+        maven { url = 'https://maven.enginehub.org/repo/' }
+        mavenCentral()
+    }
+}
+
+rootProject.name = 'naturalregen'
